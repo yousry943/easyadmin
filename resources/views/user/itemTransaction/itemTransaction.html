@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Item Transactions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/flatpicker.css">
+    <link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
+</head>
+
+<body>
+    <section class="top-nav-container mainBgColor">
+        <div class="top-nav-wrapper flexBetween">
+            <div class="left-nav-wrapper flexCenter">
+                <div class="landingDashboard-icon flexCenter">
+                    <div>
+                        <a href="landingDashboard.html" target="_self"><img
+                                src="assets/images/stock-vector-business-network-vector-icon-335658944.png" /></a>
+                    </div>
+                </div>
+
+                <div class="sub-nav-wrapper">
+                    <ul class="flexCenter">
+                        <li>
+                            <div class="main-nav-link">
+                                <a href="#">Overview</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-link dOne">
+                                <span>Accounting</span><span><i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div class="sub-nav-link-wrapper showOne">
+                                <div class="sub-nav-link">
+                                    <a href="chartOfAccounts.html">Chart Of Accounts</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="ACC_JE_TOC.html">Journals Entries</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">General Ledger</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-link dTwo">
+                                <span>Purchases</span><span><i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div class="sub-nav-link-wrapper showTwo">
+                                <div class="sub-nav-link">
+                                    <a href="PUR_V_TOC.html">Vendors</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="PUR_PO_TOC.html">Purchase Orders</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Purchases Returns </a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="PUR_P_TOC.html">Payments</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="PUR_RI_TOC.html">Receive Items</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-link dThree">
+                                <span>Sales</span><span><i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div class="sub-nav-link-wrapper showThree">
+                                <div class="sub-nav-link">
+                                    <a href="#">invoices</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Sales Orders</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Credit Notes</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Receipts</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Delivered Items</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-link dFive">
+                                <span>Inventories</span><span><i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div class="sub-nav-link-wrapper showFive">
+                                <div class="sub-nav-link">
+                                    <a href="INV_I_TOC.html">Items</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="INV_IC_TOC.html">Item Categories</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="INV_IG_TOC.html">Item Groups</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="INV_UOM_TOC.html">Units of measure </a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="INV_WH_TOC.html">Warehouses</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="INV_L_TOC.html">Locations</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="INV_LT_TOC.html">Inventory Location Transfers</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Inventory Count</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Inventory Alerts</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-link dSix">
+                                <span>Configuration</span><span><i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div class="sub-nav-link-wrapper showSix">
+                                <div class="sub-nav-link">
+                                    <a href="C_C_TOC.html">Currencies</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="C_EXR_TOC.html">Exchange Rates</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="T_T_TOC.html">Taxes</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="T_TG_TOC.html">Tax Groups</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-link dSeven">
+                                <span>Reports</span><span><i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div class="sub-nav-link-wrapper showSeven">
+                                <div class="sub-nav-link">
+                                    <a href="#">Trial Balance </a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Income Statement</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Balance Sheet</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Cash Flow Statement</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Profit and Loss</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main-nav-link dEight">
+                                <span>Bank</span><span><i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div class="sub-nav-link-wrapper showEight">
+                                <div class="sub-nav-link">
+                                    <a href="#">L/C </a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">L/G</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Loans</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Checks</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Form4</a>
+                                </div>
+                                <div class="sub-nav-link">
+                                    <a href="#">Transfers</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-section-wrapper flexCenter">
+                <div class="user-data flexBetween">
+                    <div class="notMsg">
+                        <span class="notiBtn"><i class="fas fa-bell"></i></span>
+                        <span class="msgBtn"><i class="far fa-envelope"></i></span>
+                    </div>
+                    <div class="notiBox notification">
+                        <ul>
+                            <li>a</li>
+                            <li>b</li>
+                            <li>c</li>
+                            <li>d</li>
+                            <li>e</li>
+                        </ul>
+                    </div>
+                    <div class="notiBox msgs">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </div>
+
+                    <div class="user-img-wrap flexCenter">
+                        <img src="assets/images/sort-down.png" class="down-arrow" />
+                        <span class="user-name">Mouhab Bassem</span>
+                        <img class="user-img" src="assets/images/user.png" />
+                    </div>
+                    <div class="user-setting-data">
+                        <ul>
+                            <li>
+                                <a href="#">Documentaion</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                            <li>
+                                <a href="#">Preferences</a>
+                            </li>
+                            <li>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-menu-icon flexCenter">
+                    <img src="assets/images/menu-icon.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="mobile-menu-container">
+        <div class="mobile-menu-wrapper">
+            <div class="shadow-section"></div>
+            <div class="mobile-menu-content">
+                <ul>
+                    <li>
+                        <a href="landingPage.html">Overview</a>
+                    </li>
+                    <li>
+                        <div class="main-nav-link">
+                            <span>Accounting</span><span><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <div class="sub-nav-link-wrapper">
+                            <div class="sub-nav-link">
+                                <a href="chartOfAccounts.html">Chart Of Accounts</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="ACC_JE_TOC.html">Journals Entries</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">General Ledger</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-nav-link">
+                            <span>Purchases</span><span><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <div class="sub-nav-link-wrapper">
+                            <div class="sub-nav-link">
+                                <a href="PUR_V_TOC.html">Vendors</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="PUR_PO_TOC.html">Purchase Orders</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Purchases Returns </a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="PUR_P_TOC.html">Payments</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="PUR_RI_TOC.html">Receive Items</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-nav-link">
+                            <span>Sales</span><span><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <div class="sub-nav-link-wrapper">
+                            <div class="sub-nav-link">
+                                <a href="#">invoices</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Sales Orders</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Credit Notes</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Receipts</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Delivered Items</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-nav-link">
+                            <span>Inventories</span><span><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <div class="sub-nav-link-wrapper">
+                            <div class="sub-nav-link">
+                                <a href="INV_I_TOC.html">Items</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="INV_IC_TOC.html">Item Categories</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="INV_IG_TOC.html">Item Groups</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="INV_UOM_TOC.html">Units of measure </a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="INV_WH_TOC.html">Warehouses</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="INV_L_TOC.html">Locations</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="INV_LT_TOC.html">Inventory Location Transfers</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Inventory Count</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Inventory Alerts</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-nav-link">
+                            <span>Configuration</span><span><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <div class="sub-nav-link-wrapper">
+                            <div class="sub-nav-link">
+                                <a href="C_C_TOC.html">Currencies</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="C_EXR_TOC.html">Exchange Rates</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="T_T_TOC.html">Taxes</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="T_TG_TOC.html">Tax Groups</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-nav-link">
+                            <span>Reports</span><span><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <div class="sub-nav-link-wrapper">
+                            <div class="sub-nav-link">
+                                <a href="#">Trial Balance </a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Income Statement</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Balance Sheet</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Cash Flow Statement</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Profit and Loss</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-nav-link">
+                            <span>Bank</span><span><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <div class="sub-nav-link-wrapper">
+                            <div class="sub-nav-link">
+                                <a href="#">L/C </a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">L/G</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Loans</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Checks</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Form4</a>
+                            </div>
+                            <div class="sub-nav-link">
+                                <a href="#">Transfers</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="site-data-container chartOfAccounts itemTransactionsForm">
+<form action="">
+        <div class="head">
+            <div class="data-title-search-container flexBetween">
+                <div class="data-title-wrapper breadcrumb-wrapper">
+                    <div class="breadcrumb">
+                        <h2>item Transactions</h2>
+                    </div>
+                </div>
+
+                <div class="search-data-wrapper">
+                    <div class="search-form">
+                        <div class="search-input flexCenter">
+                            <input id="myInput" type="text" name="accountingSearch" placeholder="Search" />
+                            <img src="assets/images/search.png" class="search-icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flexBetween bagntion">
+                <div class="">
+                    <!-- <span><i class="fas fa-plus-circle fs-3x"></i></span>
+                    <a href="departmentsForm.html">Add New</a> -->
+                </div>
+
+                <div class="flexBetween inner-bagntion">
+                    <div class="filter">
+                        <!--<a href="#" class="choose"><span><i class="fas fa-bars"></i></span><span>Choose</span><span><i
+                                    class="fas fa-caret-down"></i></span></a>-->
+                        <!--<a href="#" class=""><span>Print</span><span><i class="fas fa-caret-down"></i></span></a>-->
+                        <a href="#" class="action"><span>Action</span><span><i class="fas fa-caret-down"></i></span></a>
+
+                        <div class="chooseMath d-none">
+                            <ul>
+                                <li>Export</li>
+                                <li>Export 2</li>
+                                <li>طباعه</li>
+                                <li>Send By Email</li>
+                                <li>Delete</li>
+                            </ul>
+                        </div>
+
+                        <div class="actionMath d-none">
+                            <ul>
+                                <li>Export</li>
+                                <li>Export 2</li>
+                                <li>طباعه</li>
+                                <li>Send By Email</li>
+                                <li>Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sort">
+                        <span class="nB">
+                            <span><i class="fas fa-angle-left"></i></span>
+                            <span><i class="fas fa-angle-right"></i></span>
+                        </span>
+                        <span class="pageNum"> <span>1</span>/<span>2</span> </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="ACC-T-F">
+                <div class="flex alignLeft">
+                    <div class="requ">
+                        <label for="">Date Range:</label>
+                        <input type="text" name="" id="" value="" class="dateMenu">
+                        <div class="dateRangeTol">
+
+                            <ul>
+                                <li class="lastWeek">last week</li>
+                                <li class="lastMonth">last month</li>
+                                <li class="MonthToDate">Month to date</li>
+                                <li class="lastYear">last year</li>
+                                <li class="YearToDate">year to date</li>
+                            </ul>
+
+                            <ol>
+                                <li class="flexBetween flexCenter">
+                                    <input type="date" class="rangeDate" placeholder="">
+                                    <p>Date Range </p>
+                                    <span><i class="fas fa-caret-down"></i></span>
+                                </li>
+                                <li class="flexBetween flexCenter">
+                                    <input type="date" class="specificDate" placeholder="">
+                                    <p>Specific Date </p>
+                                    <span><i class="fas fa-caret-down"></i></span>
+                                </li>
+                                <li class="flexBetween flexCenter">
+                                    <input type="date" class="allDatesBefore" placeholder="">
+                                    <input type="date" class="d-none defDatesBefore" placeholder="">
+                                    <p>All Dates Before</p>
+                                    <span><i class="fas fa-caret-down"></i></span>
+                                </li>
+                                <li class="flexBetween flexCenter">
+                                    <input type="date" class="allDatesAfter" placeholder="">
+                                    <input type="date" class="d-none defDatesAfter" placeholder="">
+                                    <p>All Dates After</p>
+                                    <span><i class="fas fa-caret-down"></i></span>
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+
+                    <div class="requ">
+                        <label for="">item Type:</label>
+                        <select name="" id="">
+                            <option value="">Main Account</option>
+                            <option value="">Sub Account</option>
+                        </select>
+                    </div>
+
+                    <div class="requ">
+                        <label for="">Added By:</label>
+                        <select name="" id="">
+                            <option value="">All</option>
+                            <option value="">Sub Account</option>
+                        </select>
+                    </div>
+                    <div class="ACC-BTNS">
+                        <div class="">
+                            <button type="reset">Reset</button>
+                            <button type="submit">Show Report</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="contentOverView content flexCenter">
+            <div class="">
+                <div class="">
+                    <h2>item Transactions</h2>
+                </div>
+                <div class="dateRangeNum">from <span class="startDate"> 11/12/2019</span> to <span> 18/12/2019</span>
+                </div>
+                <div>Currency:<span class="">All (Separated)</span></div>
+            </div>
+        </div>
+
+        <div class="box-data-table-wrapper">
+            <table id="myTable" class="box-data-table">
+                <thead>
+                    <tr>
+                        <th>
+                                <div class="form-group checkNum">
+                                    <input class="" type="checkbox" id="toggle" />
+                                </div>
+                        </th>
+                        <th>
+                            <div class="ellipsisName">
+                                <span class="">Date</span>
+                                <span class="sorts"><i class="fas fa-sort-amount-up"></i></span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ellipsisOne">
+                                <span class="">Journal ID </span>
+                                <span class="sorts"><i class="fas fa-sort-amount-up"></i></span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ellipsisTwo">
+                                <span class="">debit</span>
+                                <span class="sorts"><i class="fas fa-sort-amount-up"></i></span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ellipsisThree">
+                                <span class="">credit</span>
+                                <span class="sorts"><i class="fas fa-sort-amount-up"></i></span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ellipsisFour">
+                                <span class="">action</span>
+                                <span class="sorts"><i class="fas fa-sort-amount-up"></i></span>
+                            </div>
+                        </th>
+
+                        <th class="ellipsis">
+                            <i class="fas fa-ellipsis-v"></i>
+
+                            <div class="ellipsisMenu">
+                                <ul>
+
+                                    <li>
+                                        <div class="ellipsisTap ellipsisCheck-one">
+                                            <span>Journal ID</span>
+                                            <input type="checkbox" />
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="ellipsisTap ellipsisCheck-two">
+                                            <span>debit</span>
+                                            <input type="checkbox" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ellipsisTap ellipsisCheck-three">
+                                            <span>cridet</span>
+                                            <input type="checkbox" />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7" class="balanceState">Opening balance :<span> 0</span></td>
+                    </tr>
+                    <tr>
+                        <a href="bal7a">
+                            <td class="checkNum">
+                                <input class="" type="checkbox" id="" name="" />
+                            </td>
+
+                            <td class="ellipsisName">
+                                <div class="item-action-wrapper">
+                                    <span>date</span>
+                                </div>
+                            </td>
+
+                            <td><span class="ellipsisOne">journal id</span></td>
+                            <td><span class="ellipsisTwo">debit</span></td>
+                            <td>
+                                <span class="ellipsisThree">credit</span>
+                            </td>
+                            <td>
+                                <div class="item-action">
+                                    <div><i class="fas fa-edit"></i><a href="#">edit</a></div>
+                                    <div class="itemActionRed"><i class="far fa-trash-alt"></i><a href="#">delete</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <!--  -->
+                            </td>
+                        </a>
+                    </tr>
+
+                    <tr>
+                        <a href="bal7a">
+                            <td class="checkNum">
+                                <input class="" type="checkbox" id="" name="" />
+                            </td>
+
+                            <td class="ellipsisName">
+                                <div class="item-action-wrapper">
+                                    <span>date</span>
+                                </div>
+                            </td>
+
+                            <td><span class="ellipsisOne">journal id</span></td>
+                            <td><span class="ellipsisTwo">debit</span></td>
+                            <td>
+                                <span class="ellipsisThree">credit</span>
+                            </td>
+                            <td>
+                                <div class="item-action">
+                                    <div><i class="fas fa-edit"></i><a href="#">edit</a></div>
+                                    <div class="itemActionRed"><i class="far fa-trash-alt"></i><a href="#">delete</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <!--  -->
+                            </td>
+                        </a>
+                    </tr>
+
+                    <tr>
+                        <a href="bal7a">
+                            <td class="checkNum">
+                                <input class="" type="checkbox" id="" name="" />
+                            </td>
+
+                            <td class="ellipsisName">
+                                <div class="item-action-wrapper">
+                                    <span>date</span>
+                                </div>
+                            </td>
+
+                            <td><span class="ellipsisOne">journal id</span></td>
+                            <td><span class="ellipsisTwo">debit</span></td>
+                            <td>
+                                <span class="ellipsisThree">credit</span>
+                            </td>
+                            <td>
+                                <div class="item-action">
+                                    <div><i class="fas fa-edit"></i><a href="#">edit</a></div>
+                                    <div class="itemActionRed"><i class="far fa-trash-alt"></i><a href="#">delete</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <!--  -->
+                            </td>
+                        </a>
+                    </tr>
+
+                    <tr>
+                        <a href="bal7a">
+                            <td class="checkNum">
+                                <input class="" type="checkbox" id="" name="" />
+                            </td>
+
+                            <td class="ellipsisName">
+                                <div class="item-action-wrapper">
+                                    <span>date</span>
+                                </div>
+                            </td>
+
+                            <td><span class="ellipsisOne">journal id</span></td>
+                            <td><span class="ellipsisTwo">debit</span></td>
+                            <td>
+                                <span class="ellipsisThree">credit</span>
+                            </td>
+                            <td>
+                                <div class="item-action">
+                                    <div><i class="fas fa-edit"></i><a href="#">edit</a></div>
+                                    <div class="itemActionRed"><i class="far fa-trash-alt"></i><a href="#">delete</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <!--  -->
+                            </td>
+                        </a>
+                    </tr>
+                    <tr>
+                        <td colspan="7" class="balanceState">Ending balance :<span> 0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    </section>
+    <div class="hiddenAllItems"></div>
+    <script src="js/jquery_v3.3.1.js"></script>
+    <script src="js/flatpicker.js"></script>
+    <script src="js/dataTable.js"></script>
+    <script src="js/dataTabeButtons.js"></script>
+    <script src="js/buttons.flash.min.js"></script>
+    <script src="js/jszip.min.js"></script>
+    <script src="js/pdfmake.min.js"></script>
+    <script src="js/vfs_fonts.js"></script>
+    <script src="js/buttons.html5.min.js"></script>
+    <script src="js/buttons.print.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/mainScript.js"></script>
+</body>
+
+</html>
