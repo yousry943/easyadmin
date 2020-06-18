@@ -31,7 +31,7 @@ class admin_auth extends Controller
     public function forgetpassword(){
 
 
-        return view('admin/forgetpassword');
+        return view('admin/auth/passwords/forgetpassword');
     }
 
 

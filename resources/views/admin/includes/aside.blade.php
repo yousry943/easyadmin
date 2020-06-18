@@ -47,24 +47,6 @@
 
 
 
-            @if(\Illuminate\Support\Facades\Auth::guard('admin')->user()->can('look'))
-            <li class="treeview">
-                <a href="{{url( LaravelLocalization::setLocale().'/admin/manager')}}">
-                    <i class="fa fa-language"></i>
-                    <span>Paper template</span>
-                    <span class="pull-right-container">
-            </span>
-                </a>
-                <ul class="treeview-menu">
-                        <li>
-                            <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'/admin/users/PaperTemplate')}}">
-                                <i class="fa fa-circle-o"></i> Edit Paper template
-                            </a>
-                        </li>
-
-                </ul>
-            </li>
-            @endif
 
 
 
@@ -73,95 +55,14 @@
 
 
 
-            @if(\Illuminate\Support\Facades\Auth::guard('admin')->user()->can('look'))
-            <li class="treeview">
-                <a href="{{url( LaravelLocalization::setLocale().'/admin/manager')}}">
-                    <i class="fa fa-language"></i>
-                    <span>Conference Important Dates</span>
-                    <span class="pull-right-container">
-            </span>
-                </a>
-                <ul class="treeview-menu">
-
-
-                  <li>
-                      <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'/admin/users/ConferenceImportantDates')}}">
-                          <i class="fa fa-circle-o"></i> Show Conference Dates
-                      </a>
-                  </li>
-
-
-
-                        <!-- <li>
-                            <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'/admin/users/ConferenceImportantDates/show')}}">
-                                <i class="fa fa-circle-o"></i> show Conference Important Dates
-                            </a>
-                        </li> -->
-
-                </ul>
-            </li>
-            @endif
-
-
-
-
-
-                        @if(\Illuminate\Support\Facades\Auth::guard('admin')->user()->can('look'))
-                        <li class="treeview">
-                            <a href="{{url( LaravelLocalization::setLocale().'/admin/manager')}}">
-                                <i class="fa fa-language"></i>
-                                <span>Conference Tracks</span>
-                                <span class="pull-right-container">
-                        </span>
-                            </a>
-                            <ul class="treeview-menu">
-
-
-                              <li>
-                                  <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'/admin/users/ConferenceTracks')}}">
-                                      <i class="fa fa-circle-o"></i> Add Conference Tracks
-                                  </a>
-                              </li>
-
-
-
-                                    <li>
-                                        <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'/admin/users/ConferenceTracks/show')}}">
-                                            <i class="fa fa-circle-o"></i> show Conference Tracks
-                                        </a>
-                                    </li>
-
-                            </ul>
-                        </li>
-                        @endif
 
 
 
 
 
 
-                        @if(\Illuminate\Support\Facades\Auth::guard('admin')->user()->can('look'))
-                        <li class="treeview">
-                            <a href="{{url( LaravelLocalization::setLocale().'/admin/manager')}}">
-                                <i class="fa fa-language"></i>
-                                <span>Email Settings</span>
-                                <span class="pull-right-container">
-                        </span>
-                            </a>
-                            <ul class="treeview-menu">
 
 
-                              <li>
-                                  <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'/admin/users/EmailSettings')}}">
-                                      <i class="fa fa-circle-o"></i> Show Email Settings
-                                  </a>
-                              </li>
-
-
-
-                            </ul>
-                        </li>
-                        @endif
 
 
 
@@ -196,11 +97,7 @@
                     <i class="fa fa-folder-open"></i> <span>الادمن</span>
                 </a>
             </li>
-            <li class="">
-                <a href="{{route('SubscriptionTime')}}">
-                    <i class="fa fa-folder-open"></i> <span>SubscriptionTime</span>
-                </a>
-            </li>
+        
 
 
             <li class="">

@@ -1,9 +1,9 @@
-<?php $host = "https://www.ierek.com"; ?>
+<?php $host = "https://www.easyadmin.com"; ?>
 <html style="margin:0;padding:0">
 	<head></head>
 	<div style="margin:0;padding:0;width:100%;margin:0 auto;height:auto;background-position:top;background-repeat:repeat-x;background-image:url(<?php echo $host; ?>/mailbg2.jpg)">
 
-		<center><img src="<?php echo $host; ?>/IerekLogo.png" alt="logo"></center>
+		<center><img src="<?php echo $host; ?>/easyadmin.png" alt="logo"></center>
 
 		<div style="width:80%;height:auto;margin:0 auto;font-family:Verdana;background:rgba(255,255,255,0.7);padding:10px;color:#666;border:1px solid #999;">
 			<div style="width:90%;margin:0 auto">

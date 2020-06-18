@@ -11,7 +11,7 @@
 
 </head>
 <body class="hold-transition login-page">
-<div class="login-box">  
+<div class="login-box">
   <div class="login-logo">
     <a href="../../index2.html"><b>Admin</b>ResetPassword</a>
   </div>
@@ -35,7 +35,7 @@
 
 
       <div class="form-group has-feedback">
-        <input type="rpassword" class="form-control" placeholder="rpassword" name="rpassword">
+        <input type="password" class="form-control" placeholder="rpassword" name="rpassword">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
 
@@ -69,5 +69,3 @@
 
 </body>
 </html>
-
-

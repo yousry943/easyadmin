@@ -81,7 +81,7 @@ class RegisterController extends Controller
 
         $data  = array('blade-path' => 'email.welcome',
          'to'=>$data['email'],
-         'from'=>'info@ierek.net',
+         'from'=>'info@easyadmin.net',
 
          'subject'=>'welcome  new  user ',
          'body'=>'please  login  to  system   ',
