@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
         App\Models\Permission::insert(['title'=>'اظهار وظيفة','for'=>'الوظائف']);
 
 
+
         $role = new \App\Models\Role();
         $role->title = 'المدير';
         $role->save();
@@ -71,8 +72,9 @@ class DatabaseSeeder extends Seeder
        App\Models\Permission::insert(['title'=>'Delete Slider','for'=>'slider']);
        App\Models\Role::insert(['title' => 'المدير']);
 
-          App\Models\Admin::insert(['username' => 'ahmed','password' => bcrypt('123456'),'email' => 'ahmed@ahmed.com','name'=>'admin']);
+       App\Models\Admin::insert(['username' => 'ahmed','password' => bcrypt('123456'),'email' => 'ahmed@ahmed.com','name'=>'admin']);
 
+       App\Models\admin_role::insert(['admin_id' => '1','role_id' => '1' ]);
 
 
 // App\student::insert(['fname' => '_test_student','password' => bcrypt('123'),'remember_token' => bcrypt('123'),'email' => 'test@student.com','phone'=>'01276794081','class_room_id'=>1,'seg'=>'yousry@admin.com']);

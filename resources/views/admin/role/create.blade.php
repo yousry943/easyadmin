@@ -5,7 +5,7 @@
 @section('page-header')
     <section class="content-header">
         <h1>
-                اضافة وظيفة
+            {{__('admin.add role')}}
 
             <small></small>
         </h1>
@@ -22,7 +22,8 @@
                 <!-- Horizontal Form -->
                 <div class="box box-info">
                     <div class="box-header with-border">
-                        <h3 class="box-title">اضافة وظيفة
+                        <h3 class="box-title">
+                    {{__('admin.add role')}}
                             </h3>
                     </div>
                     <!-- /.box-header -->
@@ -31,14 +32,14 @@
 
 
                     <div class="box-body" style="margin-right: 30px;">
-                            <form class="form-horizontal" method="post" action="{{url('/admin/role')}}">
+                            <form class="form-horizontal" method="post" action="{{url(LaravelLocalization::setLocale().'/admin/role')}}">
                                 {{csrf_field()}}
                     <div class="form-group">
 
-                    <label for="title" class="col-sm-4 control-label">اسم الوظيفة</label>
+                    <label for="title" class="col-sm-4 control-label"> {{__('admin.role name')}}</label>
 
                         <div class="col-sm-4 {{ $errors->has('title') ? ' has-error' : '' }}">
-                            <input type="text" name="title" class="form-control" id="title" placeholder="اسم الوظيفة" value="{{ old('title') }}">
+                            <input type="text" name="title" class="form-control" id="title" placeholder="{{__('admin.role name')}}" value="{{ old('title') }}">
                             @if ($errors->has('title'))
                                 <span class="help-block">
                     <strong>{{ $errors->first('title') }}</strong>
@@ -46,156 +47,13 @@
                             @endif
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="form-group">
-                            <div class="col-xs-12 col-sm-3">
-                                <div>
-                                    <label for="permission" class="control-label">صلاحيات الطالب</label>
-                                </div>
-                                @foreach($permissions as $permission)
-                                    @if($permission->for == 'الطالب')
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" name="permission[]" value="{{$permission->id}}"
-                                                        >
-                                                {{$permission->title}}</label>
-                                        </div>
-                                    @endif
-                                @endforeach
-
-                            </div>
-
-                        <div class="col-xs-12 col-sm-3">
-                            <div>
-                                <label for="permission" class="control-label">
-                                 صلاحيات المدرس</label>
-                            </div>
-                            @foreach($permissions as $permission)
-                                @if($permission->for == 'المدرس')
-                                    <div class="checkbox">
-
-                                        <label><input type="checkbox" name="permission[]"value="{{$permission->id}}"
-
-                                        >{{$permission->title}}</label>
-                                    </div>
-                                @endif
-                            @endforeach
-
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <div>
-                                <label for="permission" class="control-label">
-                                 صلاحيات الموظف</label>
-                            </div>
-                            @foreach($permissions as $permission)
-                                @if($permission->for == 'الموظف')
-                                    <div class="checkbox">
-
-                                        <label><input type="checkbox" name="permission[]"value="{{$permission->id}}"
-
-                                        >{{$permission->title}}</label>
-                                    </div>
-                                @endif
-                            @endforeach
-
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <div>
-                                <label for="permission" class="control-label">
-                                 صلاحيات المرحلة الدراسية</label>
-                            </div>
-                            @foreach($permissions as $permission)
-                                @if($permission->for == 'المرحلة الدراسية')
-                                    <div class="checkbox">
-
-                                        <label><input type="checkbox" name="permission[]"value="{{$permission->id}}"
-
-                                        >{{$permission->title}}</label>
-                                    </div>
-                                @endif
-                            @endforeach
-
-                        </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group">
-
-                            <div class="col-xs-12 col-sm-3">
-                                <div>
-                                    <label for="permission" class="control-label">
-                                     صلاحيات السنة الدراسية</label>
-                                </div>
-                                @foreach($permissions as $permission)
-                                    @if($permission->for == 'السنة الدراسية')
-                                        <div class="checkbox">
-
-                                            <label><input type="checkbox" name="permission[]"value="{{$permission->id}}"
-
-                                            >{{$permission->title}}</label>
-                                        </div>
-                                    @endif
-                                @endforeach
-
-                            </div>
-                            <div class="col-xs-12 col-sm-3">
-                                <div>
-                                    <label for="permission" class="control-label">
-                                     صلاحيات المادة الدراسية</label>
-                                </div>
-                                @foreach($permissions as $permission)
-                                    @if($permission->for == 'المادة الدراسية')
-                                        <div class="checkbox">
-
-                                            <label><input type="checkbox" name="permission[]"value="{{$permission->id}}"
-
-                                            >{{$permission->title}}</label>
-                                        </div>
-                                    @endif
-                                @endforeach
-
-                            </div>
-                            <div class="col-xs-12 col-sm-3">
-                                <div>
-                                    <label for="permission" class="control-label">
-                                     صلاحيات الجروب</label>
-                                </div>
-                                @foreach($permissions as $permission)
-                                    @if($permission->for == 'الجروب')
-                                        <div class="checkbox">
-
-                                            <label><input type="checkbox" name="permission[]"value="{{$permission->id}}"
-                                            >{{$permission->title}}</label>
-                                        </div>
-                                    @endif
-                                @endforeach
-
-                            </div>
-                            <div class="col-xs-12 col-sm-3">
-                                <div>
-                                    <label for="permission" class="control-label">
-                                     صلاحيات الحضور</label>
-                                </div>
-                                @foreach($permissions as $permission)
-                                    @if($permission->for == 'الحضور')
-                                        <div class="checkbox">
-
-                                            <label><input type="checkbox" name="permission[]"value="{{$permission->id}}"
-                                            >{{$permission->title}}</label>
-                                        </div>
-                                    @endif
-                                @endforeach
-
-                            </div>
 
 
-
-                        </div>
-                    </div>
                         <div class="row">
                             <div class="form-group">
                                 <div class="col-xs-12 col-sm-3">
                                     <div>
-                                        <label for="permission" class="control-label">صلاحيات الادمن</label>
+                                        <label for="permission" class="control-label"> {{__('admin.admin permations')}}</label>
                                     </div>
                                     @foreach($permissions as $permission)
                                         @if($permission->for == 'الادمن')
@@ -212,7 +70,7 @@
                                 <div class="col-xs-12 col-sm-3">
                                     <div>
                                         <label for="permission" class="control-label">
-                                            صلاحيات الوظائف</label>
+                                           {{__('admin.role permations')}}</label>
                                     </div>
                                     @foreach($permissions as $permission)
                                         @if($permission->for == 'الوظائف')

@@ -78,55 +78,9 @@ Route::get('test','userController\test@index');
 
 
      Route::get('','AdminController\AdminController@index')->name('admin.dashboard');
-     //SubscriptionTime
-     Route::get('/SubscriptionTime', 'AdminController\SubscriptionTimeController@index')->name('SubscriptionTime');
-     Route::get('/SubscriptionTime/create', 'AdminController\SubscriptionTimeController@create');
-     Route::post('/SubscriptionTime/store', 'AdminController\SubscriptionTimeController@store')->name('SubscriptionTimeStore');
-     Route::get('/SubscriptionTime/edit/{id}', 'AdminController\SubscriptionTimeController@edit');
-     Route::post('/SubscriptionTime/update/{subscription_time}', 'AdminController\SubscriptionTimeController@update')->name('SubscriptionTimeUpdate');
-     Route::get('/SubscriptionTime/delete/{id}', 'AdminController\SubscriptionTimeController@destroy');
 
-     //Slider Route
-     // Route::resource('registration','AdminController\registration');
-     //
-     //
-     // Route::get('registration/edit/{id}','AdminController\registration@edit');
-     // Route::post('registration/update/{id}','AdminController\registration@update');
-
-
-
-
-
-
-     // //Slider Route
-     // Route::resource('slider','AdminController\SliderController');
-     // Route::get('slider/{id}/delete','AdminController\SliderController@destroy');
-     //
-     // //Setting Route
-     // Route::get('setting','AdminController\settingController@index');
-     // Route::post('setting','AdminController\settingController@store');
-
-
-
-
-
-     //Users
      Route::get('users','AdminController\AdminController@getAllUsers');
      Route::get('users/{id}/delete','AdminController\AdminController@deleteUser');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // for user managers routes

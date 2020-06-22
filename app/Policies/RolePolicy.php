@@ -22,7 +22,7 @@ class RolePolicy
         //
         return  $this->getPermission($admin,'اظهار وظيفة');
 
-    }
+    } 
 
     /**
      * Determine whether the user can create admins.

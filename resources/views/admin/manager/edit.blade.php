@@ -27,7 +27,7 @@
                     <!-- form start -->
 
 
-                    <form class="form-horizontal" method="post" action="{{url('/admin/manager/'.$manager->id)}}">
+                    <form class="form-horizontal" method="post" action="{{url(LaravelLocalization::setLocale().'/admin/manager/'.$manager->id)}}">
                         {{csrf_field()}}
                         <input type="hidden" name="_method" value="patch">
                     <div class="box-body">

@@ -94,15 +94,15 @@
 
             <li class="">
                 <a href="{{url( LaravelLocalization::setLocale().'/admin/manager')}}">
-                    <i class="fa fa-folder-open"></i> <span>الادمن</span>
+                    <i class="fa fa-folder-open"></i> <span> {{__('admin.admins')}} </span>
                 </a>
             </li>
-        
+
 
 
             <li class="">
               <a href="{{url( LaravelLocalization::setLocale().'/admin/role')}}">
-                    <i class="fa fa-folder-open"></i> <span>الوظائف</span>
+                    <i class="fa fa-folder-open"></i> <span>{{__('admin.roles')}}</span>
                 </a>
             </li>
 

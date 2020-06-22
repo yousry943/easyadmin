@@ -5,7 +5,7 @@
 @section('page-header')
     <section class="content-header">
         <h1>
-            المديرين
+{{__('admin.admins')}}
             <small></small>
         </h1>
 
@@ -21,10 +21,9 @@
             <div class="col-md-12">
 
                 @if(\Illuminate\Support\Facades\Auth::guard('admin')->user()->can('admins.create'))
-                    <a href="{{url('/admin/manager/create')}}" class="btn btn-primary pull-right margin-bottom">
+                    <a href="{{url(LaravelLocalization::setLocale().'/admin/manager/create')}}" class="btn btn-primary pull-right margin-bottom">
                         <i class="fa fa-plus"></i>
-                        اضافة مدير جديد
-                    </a>
+{{__('admin.add new admin')}}                    </a>
                 @endif
             </div>
         </div>
@@ -33,7 +32,8 @@
                 <div class="box box-primary">
                     <div class="box-header">
                         <h3 class="box-title">
-                             المديرين </h3>
+                    {{__('admin.admins')}}
+                       </h3>
                         <div class="box-tools">
                             <div class="input-group input-group-sm" style="width: 150px;">
                                 <input type="text" name="table_search" class="form-control pull-right"
@@ -51,10 +51,10 @@
                     <div class="box-body table-responsive no-padding">
                         <table class="table table-hover">
                             <tr>
-                                <th>الاسم</th>
-                                <th>البريد الالكترونى</th>
-                                <th>الوظيفة</th>
-                                <th>عملية</th>
+                                <th>  {{__('admin.Name')}}</th>
+                                <th> {{__('admin.Email')}}</th>
+                                <th>{{__('admin.roles')}}</th>
+                                <th>{{__('admin.Action')}}</th>
                             </tr>
                             @foreach($managers as $manager)
                             <tr>
@@ -67,10 +67,10 @@
                                 </td>
                                 <td>
                                       @if(\Illuminate\Support\Facades\Auth::guard('admin')->user()->can('admins.update'))
-                                        <a href="{{url('/admin/manager/'.$manager->id.'/edit')}}" class="btn btn-info btn-circle"><i class="fa fa-edit"></i></a>
+                                        <a href="{{url(LaravelLocalization::setLocale().'/admin/manager/'.$manager->id.'/edit')}}" class="btn btn-info btn-circle"><i class="fa fa-edit"></i></a>
                                       @endif
                                       @if(\Illuminate\Support\Facades\Auth::guard('admin')->user()->can('admins.delete'))
-                                            <a href="{{url('/admin/manager/'.$manager->id.'/delete')}}" class="btn btn-danger btn-circle"><i class="fa fa-trash-o"></i></a>
+                                            <a href="{{url(LaravelLocalization::setLocale().'/admin/manager/'.$manager->id.'/delete')}}" class="btn btn-danger btn-circle"><i class="fa fa-trash-o"></i></a>
                                       @endif
                                 </td>
                             </tr>

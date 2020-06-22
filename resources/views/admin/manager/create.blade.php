@@ -28,7 +28,7 @@
                     <!-- form start -->
 
 
-                    <form class="form-horizontal" method="post" action="{{url('/admin/manager')}}">
+                    <form class="form-horizontal" method="post" action="{{url(LaravelLocalization::setLocale().'/admin/manager')}}">
                         {{csrf_field()}}
                     <div class="box-body">
                     <div class="form-group">
