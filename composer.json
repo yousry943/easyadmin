@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "yousry943/easyadmin",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "This is  admin have multi authentication and multi language  ",
     "keywords": [
         "framework",
         "laravel"
