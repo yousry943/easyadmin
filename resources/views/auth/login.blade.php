@@ -8,9 +8,7 @@
     				 	<h1>EasyAdmin</h1>
 
     				</div>
-    				<p>
-    					Registering to this website, you accept our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
-    				</p>
+
                 </div>
                 <div class="login-widget">
     				<div class="user-login">
@@ -59,7 +57,7 @@
                             <input type="submit" value="{{ __('Login') }}" class="submit-btn ">
                         </form>
                         <div class="register-forget">
-    						<span related-form="sign-up-form" class="signup-btn"><a href="/register">Not a member? Sign up</a></span>
+    						<span related-form="sign-up-form" class="signup-btn"><a href=" {{url('/register')}}">Not a member? Sign up</a></span>
                                <span related-form="forget-pass-form" class="forgetpass-btn">
                                <a href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}

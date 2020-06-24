@@ -7,7 +7,7 @@
     			<div class="company-info">
     				<div class="erp-logo">
     					<h1>ERP</h1>
-    					
+
     				</div>
     				<p>
     					Registering to this website, you accept our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
@@ -15,7 +15,7 @@
     			</div>
     			<div class="login-widget">
     				<div class="user-login">
-<!-- 
+<!--
 <form class="row form-app col-12 p-0 col-md-9 col-lg-9 col-xl-8 mx-auto" method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
                         @csrf
 
@@ -35,7 +35,7 @@
                             <div class="col-12 p-0 div-golfo" author="loginA">
                                 <h4 class="text-center head-author">Create account</h4>
                                     <div class="row     ">
-                                        <div class="col-12"> 
+                                        <div class="col-12">
                                             <div class="form-group">
                                                 <span class="ts-icon"><i class="fas fa-at"></i></span>
 
@@ -167,11 +167,11 @@
                                 @endif
 
                                 <span class="invalid-text">Already Exists</span>
-                        
+
     						</div>
     						<div class="input-wrapper">
     							<span class="input-pholder">Email</span>
-                               
+
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
@@ -192,7 +192,7 @@
     							<img src="visible.png" class="showPassImg" alt="Show Password" title="Show Password">
                             </div>
                             <div class="col-12 col-md-6">
-                            
+
                             <span class="ts-icon"><i class="fas fa-unlock-alt"></i></span>
 
                              <input id="password-confirm" class="form-control"  type="password" class="form-control" name="password_confirmation" required>
@@ -202,14 +202,14 @@
                                 <div class="col-12 col-md-6">
                                 <div class="form-group">
                              <span class="ts-icon"><i class="fas fa-signature"></i></span>
-                            
+
     						<input type="submit" value="Sign up" class="sign-up-btn">
                         </form>
-                        
+
     					<!-- <form id="forget-pass-form" class="widget-form" onsubmit="return validateResetPassForm()" method="post">
     						<div class="form-title">
     							<h1>Reset password</h1>
-    							
+
     							<p>
     								Enter your username or email to reset your password. <br>
     								You will receive an email with instructions on how to reset your password.	If you are experiencing problems resetting your password <a href="#">contact us</a> or <a href="#">send us an email</a>
@@ -220,14 +220,13 @@
     							<input type="text" name="userName" class="resetForm-input">
     							<span class="invalid-text">Already Exists</span>
     						</div>
-    						
+
     						<input type="submit" value="Reset password" class="submit-btn">
     					</form> -->
 
     					<div class="register-forget">
     						<!-- <span related-form="sign-up-form" class="signup-btn">Not a member? Sign up</span> -->
-    						<span related-form="sign-in-form" class="signin-btn"><a href="loginpageHTML.html">Already registered? Sign in</a></span>
-    						<span related-form="forget-pass-form" class="forgetpass-btn"><a href="resetPassHTML.html">I can't remember my password</a></span>
+    						<span related-form="sign-in-form" class="signin-btn"><a href="{{url('/login')}}">Already registered? Sign in</a></span>
     					</div>
     				</div>
     			</div>

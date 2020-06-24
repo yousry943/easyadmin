@@ -105,7 +105,7 @@
                                 <td>{{$permission->id}}</td>
                                 <td>{{$permission->title}}</td>
                                 <td>{{$permission->for}}</td>
-                                <td>
+                                <td> 
                                     {{--@if(\Illuminate\Support\Facades\Auth::guard('admin')->user()->can('permissions.update'))--}}
                                         <a href="{{url('/admin/permission/'.$permission->id.'/edit')}}" class="btn btn-info btn-circle"><i class="fa fa-edit"></i></a>
 
