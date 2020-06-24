@@ -5,8 +5,8 @@
     		<div class="login-widget-wrapper">
     			<div class="company-info">
     				<div class="erp-logo">
-    				 	<h1>ERP</h1>
-    					
+    				 	<h1>EasyAdmin</h1>
+
     				</div>
     				<p>
     					Registering to this website, you accept our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
@@ -29,7 +29,7 @@
                                     </span>
                                 @endif
                             </div>
-                            
+
                             <div class="input-wrapper">
     							<span class="input-pholder" name="userPassword">Password</span>
     							<input type="password" name="password" required class="signIn-userpass form-control{{ $errors->has('password') ? ' is-invalid' : '' }}">
@@ -46,7 +46,7 @@
                                     {{ session('status') }}
                                 </div>
                             @endif
-                            
+
                             @if (session('warning'))
                                <div class="alert alert-warning">
                                 {{ session('warning') }}
@@ -65,8 +65,8 @@
                                     {{ __('Forgot Your Password?') }}
                                 </a>
                                </span>
-                              
-                               
+
+
                         </div>
                           <div class="remember-me">
                            <input type="checkbox" name="remember" class="form-control" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
@@ -78,9 +78,3 @@
     	</div>
     </div>
     @endsection
-
-
-    
-    
-
-   

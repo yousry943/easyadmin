@@ -20,7 +20,7 @@
     
 
     <!-- Scripts -->
-<script src="{{asset('/assets/erb_front/js/jquery_v3.3.1.js')}}"></script>
+<script src="{{asset('/assets/easyadmin/js/jquery_v3.3.1.js')}}"></script>
     <script src="{{asset('/js/loginpageJS.js')}}"></script>
     <script>
 	function validateSignInForm() {

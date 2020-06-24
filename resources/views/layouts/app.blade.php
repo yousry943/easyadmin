@@ -102,7 +102,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('public/assets/erb_front/js/jquery_v3.3.1.js') }}"></script>
+    <script src="{{ asset('public/assets/easyadmin/js/jquery_v3.3.1.js') }}"></script>
     <script src="{{ asset('public/js/app.js') }}"></script>
     <script src="{{(asset('assets/js/loginpageJS.js')}}"></script>
 

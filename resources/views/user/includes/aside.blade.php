@@ -20,7 +20,7 @@
             <li class="header">MAIN NAVIGATION</li>
             <li class="treeview">
 
-            
+
             <!--    <a href="#">-->
             <!--        <i class="fa fa-language"></i>-->
             <!--        <span>{{__('messages.adminLang')}}</span>-->
@@ -82,7 +82,7 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                       
+
                     <li>
                         <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'home/attande/show')}}">
                             <i class="fa fa-circle-o"></i> حضور طلاب
@@ -100,7 +100,7 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                     
+
                     <li>
                         <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'home/invoice/show')}}">
                             <i class="fa fa-circle-o"></i> اظهار الفواتير
@@ -117,7 +117,7 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                     
+
                     <li>
                         <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'home/invoice/show')}}">
                             <i class="fa fa-circle-o"></i>  اجراء الامتحنات
@@ -126,17 +126,17 @@
                 </ul>
 
                    <ul class="treeview-menu">
-                     
+
                      <li>
                          <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'home/invoice/show')}}">
-                             <i class="fa fa-circle-o"></i>  نتيجه  الامتحنات 
+                             <i class="fa fa-circle-o"></i>  نتيجه  الامتحنات
                          </a>
                      </li>
                  </ul>
 
 
             </li>
-            
+
 
 
 
@@ -174,18 +174,18 @@
                 <ul class="treeview-menu">
                         <li>
                             <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'/admin/employee/add')}}">
-                                <i class="fa fa-circle-o"></i>  اضافه موظف 
+                                <i class="fa fa-circle-o"></i>  اضافه موظف
                             </a>
                         </li>
                     <li>
                         <a rel="alternate" href="{{url( LaravelLocalization::setLocale().'/admin/employee/show')}}">
-                            <i class="fa fa-circle-o"></i> اظهار موظف 
+                            <i class="fa fa-circle-o"></i> اظهار موظف
                         </a>
                     </li>
                 </ul>
             </li>
              -->
-            
+
             <!-- <li class="treeview">
                 <a href="{{url( LaravelLocalization::setLocale().'/admin/class')}}">
                     <i class="fa fa-language"></i>
