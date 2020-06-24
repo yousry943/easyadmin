@@ -1,12 +1,12 @@
 @extends('admin.layouts.master')
 @section('title')
-    اضافة ادمن
+    add admin 
 @endsection
 
 @section('page-header')
     <section class="content-header">
         <h1>
-            اضافة ادمن
+            add admin 
             <small></small>
         </h1>
 
@@ -22,7 +22,7 @@
                 <!-- Horizontal Form -->
                 <div class="box box-info">
                     <div class="box-header with-border">
-                        <h3 class="box-title">اضافة ادمن</h3>
+                        <h3 class="box-title">add admin </h3>
                     </div>
                     <!-- /.box-header -->
                     <!-- form start -->

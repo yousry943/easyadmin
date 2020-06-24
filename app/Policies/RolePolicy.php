@@ -20,7 +20,7 @@ class RolePolicy
     public function view(admin $admin)
     {
         //
-        return  $this->getPermission($admin,'اظهار وظيفة');
+        return  $this->getPermission($admin,'show roles');
 
     } 
 
@@ -34,7 +34,7 @@ class RolePolicy
     {
         //
 
-        return  $this->getPermission($admin,'اضافة وظيفة');
+        return  $this->getPermission($admin,'add roles');
     }
 
     /**
@@ -47,7 +47,7 @@ class RolePolicy
     public function update(admin $admin)
     {
         //
-        return $this->getPermission($admin,'تعديل وظيفة');
+        return $this->getPermission($admin,'edit roles');
 
     }
 
@@ -61,7 +61,7 @@ class RolePolicy
     public function delete(admin $admin)
     {
         //
-        return $this->getPermission($admin,'حذف وظيفة');
+        return $this->getPermission($admin,'delete roles');
 
     }
     protected function getPermission($admin,$p_title){

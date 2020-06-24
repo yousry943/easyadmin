@@ -57,6 +57,7 @@
                                 <th>{{__('admin.Name')}}</th>
                                 <th> {{__('admin.Action')}}</th>
                             </tr>
+      @if(\Illuminate\Support\Facades\Auth::guard('admin')->user()->can('roles.view'))
                             @foreach($roles as $role)
                             <tr>
                                 <td>{{$role->title}}</td>
@@ -72,6 +73,7 @@
                                 </td>
                             </tr>
                             @endforeach
+              @endif
                         </table>
                     </div>
                     <!-- /.box-body -->

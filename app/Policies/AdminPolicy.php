@@ -20,7 +20,7 @@ class AdminPolicy
     public function view(admin $admin)
     {
         //
-        return $this->getPermission($admin,'اظهار ادمن');
+        return $this->getPermission($admin,'show admins');
 
     }
 
@@ -32,7 +32,7 @@ class AdminPolicy
      */
     public function create(admin $admin)
     {
-        return $this->getPermission($admin,'اضافة ادمن');
+        return $this->getPermission($admin,'add admin');
     }
 
     /**
@@ -44,7 +44,7 @@ class AdminPolicy
      */
     public function update(admin $admin)
     {
-        return $this->getPermission($admin,'تعديل ادمن');
+        return $this->getPermission($admin,'edit admin');
     }
 
     /**
@@ -56,13 +56,13 @@ class AdminPolicy
      */
     public function delete(admin $admin)
     {
-        return $this->getPermission($admin,'حذف ادمن');
+        return $this->getPermission($admin,'delete admin' );
     }
 
     protected function getPermission($admin,$p_title){
         foreach ($admin->roles as $role){
 
-        
+
             foreach ($role->permissions as $permission){
                 if ($permission->title == $p_title){
                     return true;

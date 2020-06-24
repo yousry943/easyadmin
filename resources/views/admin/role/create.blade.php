@@ -56,7 +56,7 @@
                                         <label for="permission" class="control-label"> {{__('admin.admin permations')}}</label>
                                     </div>
                                     @foreach($permissions as $permission)
-                                        @if($permission->for == 'الادمن')
+                                        @if($permission->for == 'manager')
                                             <div class="checkbox">
                                                 <label><input type="checkbox" name="permission[]" value="{{$permission->id}}"
                                                     >
@@ -73,7 +73,7 @@
                                            {{__('admin.role permations')}}</label>
                                     </div>
                                     @foreach($permissions as $permission)
-                                        @if($permission->for == 'الوظائف')
+                                        @if($permission->for == 'roles')
                                             <div class="checkbox">
 
                                                 <label><input type="checkbox" name="permission[]" value="{{$permission->id}}"

@@ -56,6 +56,7 @@
                                 <th>{{__('admin.roles')}}</th>
                                 <th>{{__('admin.Action')}}</th>
                             </tr>
+  @if(\Illuminate\Support\Facades\Auth::guard('admin')->user()->can('admins.view'))
                             @foreach($managers as $manager)
                             <tr>
                                 <td>{{$manager->username}}</td>
@@ -75,6 +76,7 @@
                                 </td>
                             </tr>
                             @endforeach
+          @endif
                         </table>
                     </div>
                     <!-- /.box-body -->
