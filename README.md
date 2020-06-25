@@ -5,6 +5,9 @@
 
 
 EasyAdmin is  great admin  for  create  mulity authentication,language,email template .
+Don't create new admin panel when you start new project
+
+just use it .
 
 ## Table of Contents
 
