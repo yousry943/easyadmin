@@ -8,7 +8,7 @@ EasyAdmin is meant to be the UX game changer. Pure & transparent code is devoid 
 
 ## Table of Contents
 
-* [Versions](#versions)
+
 * [Installation](#installation)
 * [Usage](#Usage)
 * [Features](#Features)
