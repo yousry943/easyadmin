@@ -4,7 +4,7 @@
 [![Bootstrap Admin Template](https://drive.google.com/file/d/1OYqxCqdpFZvLqY1u8ewIe-YTUCd2D4i_/view?usp=sharing)](https://drive.google.com/file/d/1OYqxCqdpFZvLqY1u8ewIe-YTUCd2D4i_/view?usp=sharing)
 
 
-EasyAdmin is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
+EasyAdmin is  great admin  for  create  mulity authentication,language,email template .
 
 ## Table of Contents
 
@@ -77,6 +77,26 @@ Click "Login" on sidebar menu and log in with credentials:
 * Password: _123456_
 
 
+
+
+For use email function  
+
+will find founction in  this  path :
+
+* app\Helpers\Helper.php
+For calling  founction :
+
+* use Helper;
+*   $data  = array('blade-path' => 'email.EmailTemplate',
+           'to'=>$request->to,
+           'from'=>'info@domain.net',
+           'cc'=>$request->cc,
+           'subject'=>$request->subject,
+           'body'=>$request->body,
+            );
+* Helper::sendmail($data);
+
+
 ---
 
 
@@ -85,14 +105,17 @@ Click "Login" on sidebar menu and log in with credentials:
 
 #### Role management
 Allows you to create, edit, delete and reorder user roles.
-When a user has more than one role, the highest hierarchical role is used to create a menu for him.
 
-#### Manage media
-It allows to:
-* Create virtual media folders.
-* Send media to applications.
-* Move media between folders,
-* Cut images,
+#### Multi authentication
+Admin have user and  admin authentication.
+
+#### Multi language
+Admin allow you to  create webiste have many languages.
+
+#### Multi email template
+Admin allow you to  create mulity mail template and its have  one helper function to call it from any  controller  
+
+
 
 ## Support EasyAdmin Development
 
