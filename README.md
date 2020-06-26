@@ -4,7 +4,7 @@
 [![Bootstrap Admin Template](https://drive.google.com/file/d/1OYqxCqdpFZvLqY1u8ewIe-YTUCd2D4i_/view?usp=sharing)](https://drive.google.com/file/d/1OYqxCqdpFZvLqY1u8ewIe-YTUCd2D4i_/view?usp=sharing)
 
 
-EasyAdmin is a great admin to create multi authentication, language, email template.
+EasyAdmin is a great admin to use multi authentication,multi language,multi email template.
  Don't create new admin panel when you start a new project just use it.
 
 ## Table of Contents
@@ -59,16 +59,18 @@ php artisan serve
 Open your browser with address: [http://localhost:8000/public/admin/login](http://localhost:8000/public/admin/login)  
 Click "Login" on sidebar menu and log in with credentials:
 
+This user has roles: super admin_
+
 * E-mail: _manager@manager.com_
 * Password: _123456_
 
-This user has roles: super admin_
+
+This user has roles: without any permation _
 
 
 * E-mail: _admin@admin.com_
 * Password: _123456_
 
-This user has roles: without any permation _
 
 
 Open your browser with address: [http://localhost:8000/public/login](http://localhost:8000/public/login)  
