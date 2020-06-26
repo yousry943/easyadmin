@@ -4,10 +4,8 @@
 [![Bootstrap Admin Template](https://drive.google.com/file/d/1OYqxCqdpFZvLqY1u8ewIe-YTUCd2D4i_/view?usp=sharing)](https://drive.google.com/file/d/1OYqxCqdpFZvLqY1u8ewIe-YTUCd2D4i_/view?usp=sharing)
 
 
-EasyAdmin is  great admin  for  create  mulity authentication,language,email template .
-Don't create new admin panel when you start new project
-
-just use it .
+EasyAdmin is a great admin to create multi authentication, language, email template.
+ Don't create new admin panel when you start a new project just use it.
 
 ## Table of Contents
 
