@@ -2,8 +2,7 @@
     "name": "yousry943/easyadmin",
     "type": "project",
 
-    "description": "EasyAdmin is a great admin to create multi authentication, language, email template.
-     Don't create new admin panel when you start a new project just use it ",
+    "description": "EasyAdmin is a great admin to create multi authentication, language, email template.Don't create new admin panel when you start a new project just use it",
     "keywords": [
         "framework",
         "laravel",
